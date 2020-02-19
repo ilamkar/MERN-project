@@ -1,9 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Redirect,Switch} from 'react-router-dom';
+import Users from './user/components/pages/Users';
+import NewPlace from './places/components/pages/NewPlace';
 
-function App() {
-  return <h1>Lets Start</h1>;
-}
+const App = ()=> {
+  
+  return (
+   <Router>
+     <Switch>
+    <Route path="/users" exact>
+    <Users/>
+    </Route>
+
+    <Route path="/places/new" exact>
+    <NewPlace/>
+    </Route>
+
+    <Redirect to="/users"/>
+    </Switch>
+  </Router>
+  );
+} 
 
 export default App;
