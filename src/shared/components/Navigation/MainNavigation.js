@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import MainHeader from './MainHeader';
 import './MainNavigation.css';
+import NavLink from './NavLinks';
 
 const MainNavigation = props => {
   return (
@@ -13,10 +14,10 @@ const MainNavigation = props => {
         <span />
       </button>
       <h1 className="main-navigation__title">
-        <Link to="/">YourPlaces</Link>
+        <Link to="/">Your Places</Link>
       </h1>
       <nav>
-        ...
+        <NavLink/>
       </nav>
     </MainHeader>
   );
