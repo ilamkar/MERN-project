@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '../../shared/components/UIElements/Card';
 import PlaceItem from './PlaceItem';
 import './PlaceList.css';
+import '../../shared/components/FormElements/Button.css';
 
 const PlaceList = props => {
   if (props.items.length === 0) {
