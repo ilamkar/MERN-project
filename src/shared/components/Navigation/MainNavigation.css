@@ -5,7 +5,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-right: 2rem;
   cursor: pointer;
 }
